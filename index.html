@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Covid 19 Study Case</title>
 </head>
 <body>
-    <style>
-        #countryName {
-            font-weight: bold;
-        }
-    </style>
-    <h1>Covid 19 Data Summary by Country</h1>
-    <h2>Data Summary for All Countries</h2>
-    <p id="casesAllCountries"></p>
-    <p id="deathsAllCountries"></p>
-    <p id="recoveredAllCountries"></p>
-    <h2>Data Summary by Country</h2>
-    <label>Input Country's Index Number (0-196) <input type="number" id="inputCountry"></label>
-    <button onclick="clickHere()">Click Here</button>
-    <p id="countryName"></p>
-    <p id="casesCountry"></p>
-    <p id="deathsCountry"></p>
-    <p id="recoveredCountry"></p>
-    <script src="api.js"></script>
+    <div id="dataGlobal">
+        <h1>Covid 19 Data Summary</h1>
+        <h2>Data Summary for All Countries</h2>
+        <p id="casesAllCountries"></p>
+        <p id="deathsAllCountries"></p>
+        <p id="recoveredAllCountries"></p>
+    </div>
+    <div id="dataCountry">
+        <h2>Data Summary by Country</h2>
+        <h3>Search Country</h3>
+        <input type="text" id="inputCountry" placeholder="Insert Country">
+        <button id="searchButton">Click Here</button>
+        <h3 id="countryName"></h3>
+        <p id="casesCountry"></p>
+        <p id="deathsCountry"></p>
+        <p id="recoveredCountry"></p>
+        <script src="api.js"></script>
+    </div>
 </body>
 </html>
